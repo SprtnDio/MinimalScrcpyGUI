@@ -1,7 +1,14 @@
-# 🎮 Minimalistic Scrcpy GUI v1.0
+# 🎮 Minimalistic Scrcpy GUI v1.1
 
 A high-performance, minimalistic Graphical User Interface for [Scrcpy](https://github.com/Genymobile/scrcpy). 
-This tool is specifically designed for **Handheld Gaming PCs** (MSI Claw, Legion Go, ROG Ally, Steam Deck, etc.) and users who want a seamless, wireless Android-to-PC experience with zero clutter.
+This tool is specifically designed for **Handheld Gaming PCs** (Legion Go, ROG Ally, Steam Deck, etc.) and users who want a seamless, wireless Android-to-PC experience with zero clutter.
+
+---
+
+## 🚀 What's new in v1.1?
+- **Network Scanner (Auto-Discovery):** Added a "Scan Network" button. It scans your Wi-Fi/Hotspot in seconds and lists all Android devices that already have ADB over TCP/IP enabled. No more typing IPs manually after reconnecting!
+- **Split-Button UI:** The "Controls & Clipboard" menu has been fully redesigned. Icons are perfectly aligned to the left, text to the right. Very clean, very professional.
+- **5 Languages:** Now supporting English, German, Spanish, Japanese, and Chinese. Switch instantly via the settings menu!
 
 ---
 
@@ -10,7 +17,6 @@ This tool is specifically designed for **Handheld Gaming PCs** (MSI Claw, Legion
 ### 🚀 Smart Connection (Autorun & Auto-IP)
 - **Automatic IP Discovery:** The tool automatically detects all available IP addresses of your Android device via USB. 
 - **One-Click Wireless:** It enables TCP/IP via USB and switches to Wi-Fi mode instantly. You can unplug the cable right after the stream starts.
-- **Device Management:** Save multiple devices with custom names (e.g., "Retroid Pocket", "Pixel 8", "Odin 2") to switch between them effortlessly.
 
 ### 📐 Optimized for Handhelds & High-DPI
 - **DPI-Aware Rendering:** Perfectly scales on high-resolution displays (e.g., Legion Go's 1600p screen). Whether you use 125% or 150% scaling, the GUI stays sharp and correctly sized.
@@ -21,7 +27,6 @@ This tool is specifically designed for **Handheld Gaming PCs** (MSI Claw, Legion
 - **Display Presets:** Switch between Original resolution, Tablet Mode (1200x1920), or Ultra Mode (1450x1920) with one click.
 - **Power Management:** Features "Screen Off" mode (keep the phone display off while streaming) and "Stay Awake" to prevent the device from locking.
 - **Audio & Bitrate:** Real-time volume control and a bitrate slider (up to 150 Mbit/s) for crystal clear image quality.
-- **System Navigation:** Dedicated buttons for Back, Home, Recent Apps, and Power toggle.
 
 ### 📋 Clipboard Synchronization
 - Copy text on your PC and paste it onto your handheld (or vice versa). Perfect for long passwords, URLs, or coordinates.
@@ -44,6 +49,8 @@ This GUI is a **standalone extension**. You still need the original Scrcpy files
 4. Allow the debugging prompt on your phone's screen.
 5. Once the stream starts, you can unplug the USB cable and enjoy the wireless connection!
 
+*(Note: If you disconnect from your Wi-Fi/Hotspot later, you don't need the USB cable again! Just use the new **Scan Network** button to find your device as long as it hasn't been rebooted).*
+
 ---
 
 ## 👨‍💻 For Developers (Source Code)
@@ -56,9 +63,65 @@ If you want to modify the code or build the executable yourself:
    ```bash
    pyinstaller --noconsole --onefile --icon="app_icon.ico" --add-data "app_icon.ico;." --name="MinimalScrcpyGUI" handheld_connect.py
 
-📜 Credits & License:
-   GUI & Logic: SprtnDio
-   Core Technology: Scrcpy by Genymobile.
-   License: MIT License (see LICENSE file).
    
-Disclaimer: This tool is an unofficial community project and is not affiliated with Genymobile.
+📜 Credits & License
+GUI & Logic: SprtnDio
+Core Technology: Powered by Scrcpy by Genymobile.
+License: MIT License (see LICENSE file in the repository).
+Disclaimer: This tool is an unofficial community project created to enhance the Scrcpy experience on Handheld PCs. It is not affiliated with, endorsed by, or directly associated with Genymobile.
+
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                             ====------===***++*                                    
+                                        *+*---=--=++=+####++****+***+                               
+                                    *++=*+*+==*--++++###%**###**-------                             
+                                  ===**+#*#++=*=-++=+###**###**==*=====----                         
+                                 --=+*#**#*#==+=-++=+###+##%**=+*++++=--=---=                       
+                             ++=-=--+****#**+===-=+-+##*###+*-++++***##***++                        
+                             #**#**=-=+#**#*+--+-=+=*###%#*=--+++++##***+=                          
+                           +=+##*%##+-=+#####*****#####%##+=-===++#***+=                            
+                          -==++##*#%#+-=####*##%%####%%**##+++++=***+=                              
+                         ==+++++*######*+#%%%%%%##%##%%%%#+*##+*#**+*                               
+                        *****+===+*##*#%%%#%%##%%%%%%%%###%%*+*#%%%##*                              
+                       ##***###+=+#+#%%%####********#%##%###%%%%%%%%                                
+                      *#**##***#*#*%%#*#***+**+=++==+####*%%%%%%%%%%                                
+                      ==*######*##%##*#####**++=====+===+*##%%@%%%++++                              
+                      ===++++###*%#**##%%#*#++=---===-=-=+*#%%%*+*##+++                             
+                      **+=====**#*#%%%####%%#+-===---====+*****###*#*+++                            
+                     -====---+*++%#**#####%%#%%++++==-==++*+*+=*####*+*++                           
+                     ==**#####*+*###%%%%%%#%%%%%#*+*++++=+****=+*####+++*                           
+                    ###++**###++****######%@%%#%%###*+**+*%*+*+=**###+=+**+                         
+                    *=+*######+++==+++##%###%%##%%%#**==**#*+***==*#*==+**+                         
+                    **##%#=-**=+=*#%%%%%%###%%%%%%%#*+++=+*#++*##*=+*===+**                         
+                   ##%%*+==+#+=+##*###%#%%%%*%%%@%%*+#**++*#**#####*-===+**                         
+                    *#*+==*#+=+***%%+-=%%%%%%%%%%%#*==-=++++*%%%####*===**#                         
+                   *#++=+#*-=**#*%%%#**#@%%%%%%%%%%%##*+==++++*#%%###++#=+**                        
+                   #*==+##+=+***#%%%%%@%@%%%%##%#%@%+::=+**+++*######+*==++                         
+                  **++=##+*#*++*#%%%%%%%@%#%%%%%%*@@%#+=-:::==++**###++=+*                          
+                  *++-*#*+%%%*+*%%%%#%%@%%#%%%%%*##*%@%%##*+=-::+#***+--*##                         
+                **=*=+##+*%%%%***%%**%@%%%%@%%%%%%#*#+#%@@%%%#*-:==#*++%%##                         
+               ==++=*##**%%% ***#%@++###%%%%%###%%%%#*##***#%%%*-=+**++@##*                         
+             **====*##*+#%%% ++#*%@#=*%##%%%%@%##*#%%%%##***##%%%#*****@***                         
+                  ###++#%%%  ==+#%@@++#%##%%%%%@@%%*#####%%#%#%@@%***++%###                         
+                 ##*++#%%  *+=**#%@@%*=**#%###%%%%%@%#*#%#%#%#%@@@@%#*#%##*                         
+                  =+= %%  +==**%@@@@@@%*+=+*##%%%%%@%@#*##%%%%%@@@@@@@@%###                         
+               ==*#  %@      *%%      %%##*+==*%%@%%%%%*##%%##%@@@@@@@@%###                         
+               *   %%@                 *%%%%##@%%%%#*#%#*%%%%%%@@@@@@@@%###                         
+                 #%%                   #%%%%%@%%%%*+++%%*#%%%#%@@@@@@@@#*##                         
+                                      #%%%@@@@%%%#****%%%%%%%%#*@@@@@@@###*                         
+                                        %%%%%%%##%%##*%%%@%%%%## @@@@@@###%                         
+                                           %%#*#%%####%%#%%%%%##   @@@%##**                         
+                                              %##+*%%%%**%%%@%#*    %%%#*##                         
+                                                %####%++%%##%%#*     %%#*%*                         
+                                                   %%%###%@%%%#*      %%*##                         
+                                                      %%#%##%%%*#     %#***                         
+                                                         %%#####+     %%#*#                         
+                                                             %##*      %%*                          
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
